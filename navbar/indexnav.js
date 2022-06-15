@@ -1,108 +1,117 @@
-let divdata=[
-    {
-        span1:'Live',
-        span2:'3rd T20',
-        span3:'Vishakhapattnam',
-        cflag:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png',
-        cname:'India',
-        score:'179/8',
-        cflag1:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png',
-        cname1:'SA',
-        score1:'181/5',
-        result:'India won by 48 runs'
-    },
-    {
-        span1:'Live',
-        span2:'3rd T20',
-        span3:'Vishakhapattnam',
-        cflag:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png',
-        cname:'India',
-        score:'179/8',
-        cflag1:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png',
-        cname1:'SA',
-        score1:'181/5',
-        result:'India won by 48 runs'
-    },
-    {
-        span1:'Live',
-        span2:'3rd T20',
-        span3:'Vishakhapattnam',
-        cflag:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png',
-        cname:'India',
-        score:'179/8',
-        cflag1:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png',
-        cname1:'SA',
-        score1:'181/5',
-        result:'India won by 48 runs'
-    },
-    {
-        span1:'Live',
-        span2:'3rd T20',
-        span3:'Vishakhapattnam',
-        cflag:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png',
-        cname:'India',
-        score:'179/8',
-        cflag1:'https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png',
-        cname1:'SA',
-        score1:'181/5',
-        result:'India won by 48 runs'
-    },
-  
-]
+let divdata = [
+  {
+    span1: "Live",
+    span2: "3rd T20",
+    span3: "Vishakhapattnam",
+    cflag:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
+    cname: "India",
+    score: "179/8",
+    cflag1:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
+    cname1: "SA",
+    score1: "181/5",
+    result: "India won by 48 runs",
+  },
+  {
+    span1: "Live",
+    span2: "3rd T20",
+    span3: "Vishakhapattnam",
+    cflag:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
+    cname: "India",
+    score: "179/8",
+    cflag1:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
+    cname1: "SA",
+    score1: "181/5",
+    result: "India won by 48 runs",
+  },
+  {
+    span1: "Live",
+    span2: "3rd T20",
+    span3: "Vishakhapattnam",
+    cflag:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
+    cname: "India",
+    score: "179/8",
+    cflag1:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
+    cname1: "SA",
+    score1: "181/5",
+    result: "India won by 48 runs",
+  },
+  {
+    span1: "Live",
+    span2: "3rd T20",
+    span3: "Vishakhapattnam",
+    cflag:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
+    cname: "India",
+    score: "179/8",
+    cflag1:
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
+    cname1: "SA",
+    score1: "181/5",
+    result: "India won by 48 runs",
+  },
+];
 
-let whitediv=document.querySelector('#whitediv')
+let whitediv = document.querySelector("#whitediv");
 addtoWhite();
 
-function addtoWhite(event){
-    // event.preventDefault();
-    divdata.forEach(function(ele){
-        let innerDiv=document.createElement('div')
-        
-        let threeSpan=document.createElement('div')
-        let sp1=document.createElement('span')
-        sp1.innerText=ele.span1
-        let sp2=document.createElement('span')
-        sp2.innerText=ele.span2
-        let sp3=document.createElement('span')
-        sp3.innerText=ele.span3
-        threeSpan.append(sp1,sp2,sp3)
+function addtoWhite(event) {
+  // event.preventDefault();
+  divdata.forEach(function (ele) {
+    let innerDiv = document.createElement("div");
 
-        let div1=document.createElement('div')
-        let countryImage=document.createElement('img')
-        countryImage.setAttribute('src',ele.cflag)
-        let countryName=document.createElement('span')
-        countryName.innerText=ele.cname
-        let scrdiv=document.createElement('div')
-        let scor=document.createElement('span')
-        scor.innerText=ele.score
-        scrdiv.append(scor)
-        div1.append(countryImage,countryName,scrdiv)
+    let threeSpan = document.createElement("div");
+    let sp1 = document.createElement("span");
+    sp1.innerText = ele.span1;
+    let sp2 = document.createElement("span");
+    sp2.innerText = ele.span2;
+    let sp3 = document.createElement("span");
+    sp3.innerText = ele.span3;
+    threeSpan.append(sp1, sp2, sp3);
 
-        let div2=document.createElement('div')
-        let countryImage1=document.createElement('img')
-        countryImage1.setAttribute('src',ele.cflag1)
-        let countryName1=document.createElement('span')
-        countryName1.innerText=ele.cname1
-        let scrdiv1=document.createElement('div')
-        let scor1=document.createElement('span')
-        scor1.innerText=ele.score1
-        scrdiv1.append(scor1)
-        div2.append(countryImage1,countryName1,scrdiv1)
+    let div1 = document.createElement("div");
+    let countryImage = document.createElement("img");
+    countryImage.setAttribute("src", ele.cflag);
+    let countryName = document.createElement("span");
+    countryName.innerText = ele.cname;
+    let scrdiv = document.createElement("div");
+    let scor = document.createElement("span");
+    scor.innerText = ele.score;
+    scrdiv.append(scor);
+    div1.append(countryImage, countryName, scrdiv);
 
-        let res=document.createElement('span')
-        res.innerText=ele.result
+    let div2 = document.createElement("div");
+    let countryImage1 = document.createElement("img");
+    countryImage1.setAttribute("src", ele.cflag1);
+    let countryName1 = document.createElement("span");
+    countryName1.innerText = ele.cname1;
+    let scrdiv1 = document.createElement("div");
+    let scor1 = document.createElement("span");
+    scor1.innerText = ele.score1;
+    scrdiv1.append(scor1);
+    div2.append(countryImage1, countryName1, scrdiv1);
 
-        let repDiv=document.createElement('div')
-        let scheduleSpan=document.createElement('span')
-        scheduleSpan.innerText='Schedule'
-        let scheduleSpan1=document.createElement('span')
-        scheduleSpan1.innerText='Table'
-        let scheduleSpan2=document.createElement('span')
-        scheduleSpan2.innerText='Images'
-        repDiv.style.border='1px solid'
-        repDiv.append(scheduleSpan,scheduleSpan1,scheduleSpan2)
-        
-        innerDiv.append(threeSpan,div1,div2,res,repDiv)
-        whitediv.append(innerDiv)
-    })
+    let res = document.createElement("span");
+    res.innerText = ele.result;
+    res.style.marginBottom='8px'
+
+    let repDiv = document.createElement("div");
+    let scheduleSpan = document.createElement("span");
+    scheduleSpan.innerText = "Schedule";
+    let scheduleSpan1 = document.createElement("span");
+    scheduleSpan1.innerText = "Table";
+    let scheduleSpan2 = document.createElement("span");
+    scheduleSpan2.innerText = "Images";
+    repDiv.style.borderTop = "1px solid";
+    repDiv.style.paddingTop='8px'
+    repDiv.append(scheduleSpan, scheduleSpan1, scheduleSpan2);
+
+    innerDiv.append(threeSpan, div1, div2, res, repDiv);
+    whitediv.append(innerDiv);
+  });
 }
