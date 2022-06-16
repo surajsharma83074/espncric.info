@@ -12,55 +12,60 @@ let divdata = [
     cname1: "SA",
     score1: "181/5",
     result: "India won by 48 runs",
+    cat:'Regular'
   },
   {
     span1: "Live",
     span2: "3rd T20",
     span3: "Vishakhapattnam",
     cflag:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
-    cname: "India",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/340000/340047.png",
+    cname: "Sri Lanka",
     score: "179/8",
     cflag1:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
-    cname1: "SA",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/340400/340493.png",
+    cname1: "AUS",
     score1: "181/5",
     result: "India won by 48 runs",
+    cat:'International'
   },
   {
     span1: "Live",
     span2: "3rd T20",
     span3: "Vishakhapattnam",
     cflag:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
-    cname: "India",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/317600/317615.png",
+    cname: "WI",
     score: "179/8",
     cflag1:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
-    cname1: "SA",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313145.logo.png",
+    cname1: "Bangladesh",
     score1: "181/5",
     result: "India won by 48 runs",
+    cat:'Ranji Trophy'
   },
   {
     span1: "Live",
     span2: "3rd T20",
     span3: "Vishakhapattnam",
     cflag:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
-    cname: "India",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313133.logo.png",
+    cname: "USA",
     score: "179/8",
     cflag1:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313125.logo.png",
-    cname1: "SA",
+      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_160,q_50/lsci/db/PICTURES/CMS/313100/313128.logo.png",
+    cname1: "India",
     score1: "181/5",
     result: "India won by 48 runs",
+    cat:'Ashes'
   },
 ];
 
 let whitediv = document.querySelector("#whitediv");
-addtoWhite();
 
-function addtoWhite(event) {
+addtoWhite(divdata);
+function addtoWhite(divdata) {
+  document.querySelector('#whitediv').innerHTML=''
   // event.preventDefault();
   divdata.forEach(function (ele) {
     let innerDiv = document.createElement("div");
@@ -115,3 +120,36 @@ function addtoWhite(event) {
     whitediv.append(innerDiv);
   });
 }
+
+
+document.querySelector('#reg').addEventListener('click',clicking)
+function clicking(){
+  
+    let filterData=divdata.filter(function(ele){
+      return document.querySelector('#reg').innerText==ele.cat
+    })
+   addtoWhite(filterData)
+}
+document.querySelector('#int').addEventListener('click',clicking1)
+function clicking1(){
+    let filterData=divdata.filter(function(ele){
+      return document.querySelector('#int').innerText==ele.cat
+    })
+    addtoWhite(filterData)
+}
+document.querySelector('#ran').addEventListener('click',clicking2)
+function clicking2(){
+    let filterData=divdata.filter(function(ele){
+      return document.querySelector('#ran').innerText==ele.cat
+    })
+    addtoWhite(filterData)
+}
+document.querySelector('#ash').addEventListener('click',clicking3)
+function clicking3(){
+    let filterData=divdata.filter(function(ele){
+      return document.querySelector('#ash').innerText==ele.cat
+    })
+    addtoWhite(filterData)
+}
+     
+

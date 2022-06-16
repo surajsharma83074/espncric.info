@@ -3,12 +3,11 @@
   margin: 0px;
   font-family: BentonSans, Arial, "Noto Sans", sans-serif;
 }
-
 #container11{
   /* border: 1px solid green; */
   width: 100%;
   height: 190px;
-  background-color: #03a9f4;
+  background-color: #0398dc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +22,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
-  gap: 20px;
+  gap: 10px;
 }
 #whitediv > div {
   /* border: 1px solid; */
@@ -36,6 +35,11 @@
   padding: 5px 15px 5px 15px;
   border-radius: 8px;
 }
+#allspan>button{
+  background-color: transparent;
+  color: white;
+  border: 0px;
+}
 #whitediv > div > div:first-child {
   display: flex;
   justify-content: space-between;
@@ -43,7 +47,6 @@
   font-size: 10px;
   color: grey;
 }
-
 #whitediv > div > div {
   display: flex;
   justify-content: space-between;
@@ -51,9 +54,6 @@
 #whitediv > div > div:nth-child(2) {
   /* background-color: orange; */
   display: flex;
-}
-#whitediv > div > div:nth-child(2) > span + span {
-  /* background-color: yellow; */
 }
 #whitediv > div > div:nth-child(2) > img + span {
   margin-left: 0px;
@@ -64,15 +64,9 @@
   /* background-color: orange; */
   display: flex;
 }
-#whitediv > div > div:nth-child(3) > span + span {
-  /* background-color: yellow; */
-}
 #whitediv > div > div:nth-child(3) > img + span {
   margin-left: 0px;
   /* background-color: green; */
-}
-#whitediv > div > div > div {
-  /* background-color: teal; */
 }
 #whitediv > div > span {
   color: grey;
@@ -114,7 +108,7 @@
   margin: auto;
   display: flex;
   color: white;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #navbar > div {
   /* background-color: green; */
@@ -127,8 +121,22 @@
   height: 25px;
   /* background-color: red; */
 }
-#navbar > span {
-  color: white;
+#rightside>.logo{
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#rightside>.logo>img{
+  width: 19%;
+}
+#rightside>#edition{
+  width: 70px;
+  text-align: center;
+}
+#rightside{
+  display: grid;
+  gap: 10px;
 }
 #fnavbar {
   width: 100%;
@@ -139,6 +147,8 @@
   position: sticky;
   top: 0px;
 }
-#navbar > div + img {
-  /* background-color: red; */
+#selectspan{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  gap: 10px;
 }
