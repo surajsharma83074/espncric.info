@@ -124,8 +124,7 @@ function addtoWhite(divdata) {
 
 document.querySelector('#reg').addEventListener('click',clicking)
 function clicking(){
-  
-    let filterData=divdata.filter(function(ele){
+  let filterData=divdata.filter(function(ele){
       return document.querySelector('#reg').innerText==ele.cat
     })
    addtoWhite(filterData)
@@ -151,5 +150,8 @@ function clicking3(){
     })
     addtoWhite(filterData)
 }
-     
+document.querySelector('#alldata').addEventListener('click',clickingall)
+function clickingall(){
+  addtoWhite(divdata);
+}     
 
