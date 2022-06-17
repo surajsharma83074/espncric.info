@@ -12,6 +12,8 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 20px;
+  /* margin-top: 200px; */
+  position: relative;
 }
 #whitediv {
   /* border: 1px solid red; */
@@ -47,31 +49,15 @@
   font-size: 10px;
   color: grey;
 }
-#whitediv > div > div {
+#whitediv > div > #country1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-#whitediv > div > div:nth-child(2) {
-  /* background-color: orange; */
-  display: flex;
   justify-content: space-between;
 }
-/* #whitediv > div > div:nth-child(2) > img + span {
-  background-color: green;
-  margin-left: -25px;
-}
-#whitediv > div > div:nth-child(2) > img{
-  background-color: goldenrod;
-} */
-#whitediv > div > div:nth-child(3) {
-  /* background-color: orange; */
+#whitediv > div > #country2 {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-#whitediv > div > div:nth-child(3) > img + span {
-  margin-left: 0px;
-  /* background-color: green; */
 }
 #whitediv > div > span {
   color: grey;
@@ -203,3 +189,28 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #03a9f4;}
+
+/* --------------------------curusjkahbgirh------------------------- */
+
+#previous{
+  position: absolute;
+  top: 50%;
+  left: 175px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: transparent;
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+}
+#next{
+  position: absolute;
+  top: 50%;
+  right: 175px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: transparent;
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+}
