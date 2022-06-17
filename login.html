@@ -15,10 +15,10 @@
         
             <form>
                <label for="email">Email</label>
-                <input type="text" placeholder="Enter The Email" required><br>
+                <input id="email" type="text" placeholder="Enter The Email" required><br>
                 <label for="password">Password</label><br>
                 
-                <input type="password" placeholder="Enter The password" required><br>
+                <input id="passw" type="password" placeholder="Enter The password" required><br>
                 <a href="#"><h4>Forget Password ?</h4></a>
                 <input type="submit" value="LOG IN">
             </form>
@@ -26,3 +26,25 @@
     </div>
 </body>
 </html>
+
+<script>
+    let storeSignup=JSON.parse(localStorage.getItem('signData'))
+    document.querySelector('form').addEventListener('submit',logging)
+
+    function logging(){
+        let obj={
+            em:document.querySelector('#email').value,
+            pw:document.querySelector('#passw').value
+        }
+        let flag=true
+        storeSignup.forEach(function(ele){
+            if(obj.em==ele.email&&obj.pw==ele.pwd){
+                flag=false
+                alert('login success')
+            }
+        })
+        if(flag==true){
+            alert('wrong credentials please enter correct details')
+        }
+    }
+</script>
