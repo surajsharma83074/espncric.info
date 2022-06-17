@@ -84,9 +84,13 @@ function addtoWhite(divdata) {
     countryImage.setAttribute("src", ele.cflag);
     let countryName = document.createElement("span");
     countryName.innerText = ele.cname;
+    countryName.style.fontSize='12px'
+    countryName.style.fontWeight='bolder'
     let scrdiv = document.createElement("div");
     let scor = document.createElement("span");
     scor.innerText = ele.score;
+    scor.style.fontSize='14px'
+    scor.style.fontWeight='bold'
     scrdiv.append(scor);
     div1.append(countryImage, countryName, scrdiv);
 
@@ -95,9 +99,13 @@ function addtoWhite(divdata) {
     countryImage1.setAttribute("src", ele.cflag1);
     let countryName1 = document.createElement("span");
     countryName1.innerText = ele.cname1;
+    countryName1.style.fontSize='12px'
+    countryName1.style.fontWeight='bolder'
     let scrdiv1 = document.createElement("div");
     let scor1 = document.createElement("span");
     scor1.innerText = ele.score1;
+    scor1.style.fontSize='14px'
+    scor1.style.fontWeight='bold'
     scrdiv1.append(scor1);
     div2.append(countryImage1, countryName1, scrdiv1);
 
@@ -114,6 +122,8 @@ function addtoWhite(divdata) {
     scheduleSpan2.innerText = "Images";
     repDiv.style.borderTop = "1px solid";
     repDiv.style.paddingTop='8px'
+    repDiv.style.fontSize='12px'
+    repDiv.style.fontWeight='bolder'
     repDiv.append(scheduleSpan, scheduleSpan1, scheduleSpan2);
 
     innerDiv.append(threeSpan, div1, div2, res, repDiv);
