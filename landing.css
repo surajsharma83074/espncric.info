@@ -20,14 +20,14 @@
     /* border: 1px solid red; */
     margin: auto;
     width: 75%;
-    height: 70%;
+    height: 85%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
     gap: 10px;
   }
-  #whitediv > div {
+  #whitediv>div{
     /* border: 1px solid; */
     width: 24%;
     height: 100%;
@@ -42,6 +42,7 @@
     background-color: transparent;
     color: white;
     border: 0px;
+    margin-top: 7px;
   }
   #whitediv > div > div:first-child {
     display: flex;
