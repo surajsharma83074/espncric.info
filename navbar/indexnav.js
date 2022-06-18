@@ -59,6 +59,7 @@ let divdata = [
     result: "India won by 48 runs",
     cat:'Ashes'
   },
+  
 ];
 
 let whitediv = document.querySelector("#whitediv");
@@ -66,11 +67,13 @@ let whitediv = document.querySelector("#whitediv");
 addtoWhite(divdata);
 function addtoWhite(divdata) {
   document.querySelector('#whitediv').innerHTML=''
-  // event.preventDefault();
+  
   divdata.forEach(function (ele) {
     let innerDiv = document.createElement("div");
+    innerDiv.id='innerinner'
 
     let threeSpan = document.createElement("div");
+    threeSpan.id='thrspan'
     let sp1 = document.createElement("span");
     sp1.innerText = ele.span1;
     let sp2 = document.createElement("span");
@@ -80,24 +83,34 @@ function addtoWhite(divdata) {
     threeSpan.append(sp1, sp2, sp3);
 
     let div1 = document.createElement("div");
+    div1.id='country1'
     let countryImage = document.createElement("img");
     countryImage.setAttribute("src", ele.cflag);
     let countryName = document.createElement("span");
     countryName.innerText = ele.cname;
+    countryName.style.fontSize='12px'
+    countryName.style.fontWeight='bolder'
     let scrdiv = document.createElement("div");
     let scor = document.createElement("span");
     scor.innerText = ele.score;
+    scor.style.fontSize='14px'
+    scor.style.fontWeight='bold'
     scrdiv.append(scor);
     div1.append(countryImage, countryName, scrdiv);
 
     let div2 = document.createElement("div");
+    div2.id='country2'
     let countryImage1 = document.createElement("img");
     countryImage1.setAttribute("src", ele.cflag1);
     let countryName1 = document.createElement("span");
     countryName1.innerText = ele.cname1;
+    countryName1.style.fontSize='12px'
+    countryName1.style.fontWeight='bolder'
     let scrdiv1 = document.createElement("div");
     let scor1 = document.createElement("span");
     scor1.innerText = ele.score1;
+    scor1.style.fontSize='14px'
+    scor1.style.fontWeight='bold'
     scrdiv1.append(scor1);
     div2.append(countryImage1, countryName1, scrdiv1);
 
@@ -106,6 +119,7 @@ function addtoWhite(divdata) {
     res.style.marginBottom='8px'
 
     let repDiv = document.createElement("div");
+    repDiv.id='repdiving'
     let scheduleSpan = document.createElement("span");
     scheduleSpan.innerText = "Schedule";
     let scheduleSpan1 = document.createElement("span");
@@ -114,6 +128,8 @@ function addtoWhite(divdata) {
     scheduleSpan2.innerText = "Images";
     repDiv.style.borderTop = "1px solid";
     repDiv.style.paddingTop='8px'
+    repDiv.style.fontSize='12px'
+    repDiv.style.fontWeight='bolder'
     repDiv.append(scheduleSpan, scheduleSpan1, scheduleSpan2);
 
     innerDiv.append(threeSpan, div1, div2, res, repDiv);
@@ -124,8 +140,7 @@ function addtoWhite(divdata) {
 
 document.querySelector('#reg').addEventListener('click',clicking)
 function clicking(){
-  
-    let filterData=divdata.filter(function(ele){
+  let filterData=divdata.filter(function(ele){
       return document.querySelector('#reg').innerText==ele.cat
     })
    addtoWhite(filterData)
@@ -151,5 +166,8 @@ function clicking3(){
     })
     addtoWhite(filterData)
 }
-     
+document.querySelector('#alldata').addEventListener('click',clickingall)
+function clickingall(){
+  addtoWhite(divdata);
+}     
 
