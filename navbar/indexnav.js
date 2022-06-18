@@ -70,6 +70,7 @@ function addtoWhite(divdata) {
   
   divdata.forEach(function (ele) {
     let innerDiv = document.createElement("div");
+    innerDiv.id='innerinner'
 
     let threeSpan = document.createElement("div");
     threeSpan.id='thrspan'
