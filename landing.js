@@ -173,7 +173,9 @@ document.querySelector("#chandamama").addEventListener("click", insideDark);
 let count = 0;
 let ary = document.querySelectorAll(".dropbtn");
 let ary2 = document.querySelectorAll("#whitediv>div");
-console.log(ary2.length);
+let footerArray=document.querySelectorAll('body a')
+let childftr=document.querySelectorAll('.childfooter')
+console.log(childftr.length);
 function insideDark() {
   count++;
   if (count == 1) {
@@ -194,8 +196,28 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakhadark.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypaddark.png";
+    document.querySelector('body').style.backgroundColor='#1d1e1f'
+    // ------------------footer start-----------------
+    document.querySelector('.parentfooter').style.backgroundColor='#1d1e1f'
+    for(let i=0;i<footerArray.length;i++){
+      footerArray[i].style.backgroundColor='#1d1e1f'
+    }
+    footerArray.forEach(function(el){
+      el.style.color='white'
+    })
+    childftr.forEach(function(ele){
+      ele.style.backgroundColor='#1d1e1f'
+    })
+    document.querySelector('#footerlastpart').style.backgroundColor='#1d1e1f'
+    // -------------------footer end--------------------
+    document.querySelector('body').style.color='white' //please do not remove this line or this code will not work
     // console.log('im in dark mode')
-  } else {
+  } 
+  
+  
+  
+  
+  else {
     document.querySelector("#container11").style.backgroundColor = "#0398dc";
     for (let i = 0; i < ary2.length; i++) {
       ary2[i].style.backgroundColor = "white";
@@ -213,6 +235,20 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakha.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypad.png";
+    document.querySelector('body').style.backgroundColor='white'
+     // ------------------footer start-----------------
+     document.querySelector('.parentfooter').style.backgroundColor='white'
+     for(let i=0;i<footerArray.length;i++){
+       footerArray[i].style.backgroundColor='white'
+     }
+     footerArray.forEach(function(el){
+       el.style.color='black'
+     })
+     childftr.forEach(function(ele){
+       ele.style.backgroundColor='white'
+     })
+     document.querySelector('#footerlastpart').style.backgroundColor='white'
+     // -------------------footer end--------------------
     // console.log('im in normal work')
     count = 0;
   }
