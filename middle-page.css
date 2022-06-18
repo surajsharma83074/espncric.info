@@ -1,0 +1,361 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgba(181, 180, 180, 0.219);
+  }
+  #container {
+    width: 84%;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    
+  }
+  .flex-50 img{
+    transition: transform 0.4s;
+  }
+  .flex-50 img:hover{
+    transform: scale(1.1);
+  }
+  .flex-25 {
+    width: 20%;
+    height: fit-content;
+  }
+  .first-box{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* height: 200px; */
+  
+  }
+  ::placeholder{
+    color: #0cabf4;
+    font-size: 18px;
+    text-align: center;
+  }
+  .flex-25-input-box{
+    height: 45px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    /* border: 1px solid red; */
+  }
+  /* class for font awesome */
+  .flex-25-input-box>button{
+    height: fit-content;
+    background-color: transparent;
+    color: #0cabf4 ;
+    border: transparent;
+    position: relative;
+    left: 16%;
+    top: 30%;
+    /* border: 1px solid black; */
+  }
+  /* class for input class=ask-qustion */
+  .ask-qustion{
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+   /* padding: 0 10px; */
+    margin-bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    /* border: navajowhite; */
+    border:none;
+  }
+  .ask-qustion:focus{
+    border:none;
+  }
+  .note {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    /* background-color: red; */
+    padding-left: 15px;
+    font-family: BentonSans;
+    /* border: 1px solid black; */
+  }
+  .Links {
+    /* line-height: 20px; */
+    font-family: BentonSans;
+    /* border: 1px solid black; */
+  }
+  
+  .Links a {
+    text-decoration: none;
+    height: 30px;
+    padding-left: 16px;
+    /* letter-spacing: 0px; */
+    display: block;
+    color: rgb(43, 44, 45);
+    font-family: BentonSans, Arial, "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  .Links > a:hover {
+    background-color: skyblue;
+  }
+  
+  a > i {
+    color: blue;
+    font-weight: bold;
+    font-size: 15px;
+    /* margin-left: 15px; */
+    margin-top: 15px;
+  }
+  .content-box {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+  }
+  .flex-50 {
+    width: 56%;
+    /* border: 1px solid black; */
+    margin: 0 2%;
+    height: fit-content;
+  }
+  .highlight-image-box {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+  
+    
+  }
+  .highlight-image-box-1 {
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid black; */
+  }
+  .highlight-image-box-1 > img {
+    width: 100%;
+    /* border: 1px solid black; */
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+  }
+  .highlight-image-box-2 {
+    width: 100%;
+    /* border: 1px solid black; */
+    height: 130px;
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+  .dhoni {
+    width: 25%;
+    height: 80%;
+    /* padding: 30px; */
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  .dhoni > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .explanation {
+    width: 70%;
+    height: 80%;
+    margin-top: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+      line-height: 25px;
+      font-family: BentonSans;
+  }
+  .highlight-image-box-3 {
+      background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+  }
+  .highlight-image-box-3 > a {
+    text-decoration: none;
+    height: 30px;
+    padding-left: 16px;
+    /* color:black; */
+    font-family: BentonSans, Arial, "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .highlight-image-box-3 > a:hover {
+    color: rgb(16, 180, 244);
+  }
+  
+  
+  
+  .feed{
+      
+      /* height: 500px; */
+      margin-top: 30px;
+      background-color: white;
+      border-radius: 10px;
+      /* border: 1px solid black; */
+  }
+  .ranji{
+    padding: 7px 20px;
+  }
+  .players{
+      width: 100%;
+      margin: auto;
+      margin-top: 30px;
+      background-color: white; border-radius: 10px;
+      overflow: hidden;
+  }
+  .ranji>h3{
+    font-size: 13px;
+    
+    font-style: BentonSans-Bold, Arial, "Noto Sans", sans-serif;
+  }
+  .ranji>p{
+    font-size: 13px;
+    
+    font-style: BentonSans-Bold, Arial, "Noto Sans", sans-serif;
+  }
+  .players>h2{
+      margin: 9px 0 9px 15px;
+      color: rgb(63, 62, 62);
+  }
+  .players>img{
+      width: 95%;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+  }
+  .feed-image{
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-evenly;
+      background-color: white;
+      border-radius: 10px;
+      
+  }
+  .feed-image-1{
+      width: 30%;
+      padding-top: 15px;
+  
+  }
+  .feed-image-1>p{
+      font-size: 10px;
+      margin-top: 5px;
+      padding-right: 9px;
+  }
+  .feed-image img{
+      width: 100%;
+      border-radius: 5px;
+  }
+  .flex-50-second-box{
+    background-color: white;
+    border-radius: 10px;
+  }
+   /* playing mathes section */
+  
+  .Matches{
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .div-1{
+    height: 40px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  .div-1>div{
+    /* border: 1px solid red; */
+    width: 94%;
+  }
+  .div-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-2>div{
+    width: 94%;
+    /* border: 1px solid red; */
+  }
+  .div-3>div{
+    width: 94%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .div-3 img{
+    width: 100%;
+    border-radius: 10px;
+  }
+  .div-4{
+    height: 40px;
+  }
+  .div-4>a{
+    width: 94%;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    text-decoration: none;
+    font-family: BentonSans, Arial, "Noto Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    /* background-color: red; */
+  }
+  
+  
+  
+  .flex-75 {
+    width: 24%;
+    /* border: 1px solid black; */
+    height: fit-content;
+    /* border: 1px solid black; */
+  }
+  .flex-75-box {
+      margin-top: 16px;
+  
+    border-radius: 17px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .flex-75-child-box {
+    border: 1px solid transparent;
+  }
+  .flex-75-image-box {
+    width: 85%;
+    margin: auto;
+    margin-top: 8%;
+    
+  }
+  .flex-75-image-box > p {
+    font-size: 14px;
+    padding-right: 1px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: BentonSans;
+  }
+  .flex-75-image-box > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
