@@ -176,6 +176,7 @@ let ary2 = document.querySelectorAll("#whitediv>div");
 let footerArray=document.querySelectorAll('body a')
 let childftr=document.querySelectorAll('.childfooter')
 console.log(childftr.length);
+
 function insideDark() {
   count++;
   if (count == 1) {
@@ -218,6 +219,7 @@ function insideDark() {
   
   
   else {
+    document.querySelector('body').style.color='black'
     document.querySelector("#container11").style.backgroundColor = "#0398dc";
     for (let i = 0; i < ary2.length; i++) {
       ary2[i].style.backgroundColor = "white";
