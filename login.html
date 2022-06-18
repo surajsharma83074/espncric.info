@@ -43,7 +43,7 @@
         storeSignup.forEach(function(ele){
             if(obj.em==ele.email&&obj.pw==ele.pwd){
                 flag=false
-                alert('login success')
+                window.location.href='./landing.html'
             }
         })
         if(flag==true){
