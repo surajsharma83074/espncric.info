@@ -1,4 +1,5 @@
 // -------------------------------navbar js starts here----------------------------------
+document.querySelector("body").style.backgroundColor="#f9f9fb"
 let divdata = [
   {
     span1: "Live",
@@ -175,6 +176,8 @@ let ary = document.querySelectorAll(".dropbtn");
 let ary2 = document.querySelectorAll("#whitediv>div");
 let footerArray=document.querySelectorAll('body a')
 let childftr=document.querySelectorAll('.childfooter')
+let heading=document.querySelectorAll(".childfooter>div>h1")
+let end=document.querySelectorAll(".theend>span>a")
 console.log(childftr.length);
 
 function insideDark() {
@@ -197,9 +200,10 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakhadark.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypaddark.png";
-    document.querySelector('body').style.backgroundColor='#1d1e1f'
+    document.querySelector('body').style.backgroundColor='black'
     // ------------------footer start-----------------
     document.querySelector('.parentfooter').style.backgroundColor='#1d1e1f'
+    document.querySelector(".parentfooter").style.border="1px solid black"
     for(let i=0;i<footerArray.length;i++){
       footerArray[i].style.backgroundColor='#1d1e1f'
     }
@@ -209,7 +213,11 @@ function insideDark() {
     childftr.forEach(function(ele){
       ele.style.backgroundColor='#1d1e1f'
     })
+    heading.forEach(function(elem){
+      elem.style.color="white"
+    })
     document.querySelector('#footerlastpart').style.backgroundColor='#1d1e1f'
+    // document.querySelector(".childfooter>div h1").style.color="white"
     // -------------------footer end--------------------
     document.querySelector('body').style.color='white' //please do not remove this line or this code will not work
     // console.log('im in dark mode')
@@ -237,7 +245,7 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakha.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypad.png";
-    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.backgroundColor='#f9f9fb'
      // ------------------footer start-----------------
      document.querySelector('.parentfooter').style.backgroundColor='white'
      for(let i=0;i<footerArray.length;i++){
@@ -249,7 +257,14 @@ function insideDark() {
      childftr.forEach(function(ele){
        ele.style.backgroundColor='white'
      })
-     document.querySelector('#footerlastpart').style.backgroundColor='white'
+     heading.forEach(function(elem){
+      elem.style.color="black"
+     })
+     end.forEach(function(elem){
+      elem.style.backgroundColor="#edeef0"
+     })
+     document.querySelector('#footerlastpart').style.backgroundColor='#edeef0'
+
      // -------------------footer end--------------------
     // console.log('im in normal work')
     count = 0;
