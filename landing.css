@@ -360,6 +360,7 @@ span>span>a{
   .flex-25 {
     width: 20%;
     height: fit-content;
+    
   }
   .first-box{
     background-color: white;
@@ -368,6 +369,12 @@ span>span>a{
     /* height: 200px; */
   
   }
+  .first-box-1{
+    width: 50%;
+    margin: auto;
+   padding: 20px 0px;
+  }
+
   ::placeholder{
     color: #0cabf4;
     font-size: 18px;
@@ -402,8 +409,9 @@ span>span>a{
     margin-bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
-    /* border: navajowhite; */
-    border:none;
+    
+    /* border:none; */
+    border:1px #0cabf4;
   }
   .ask-qustion:focus{
     border:none;
@@ -470,6 +478,7 @@ span>span>a{
     /* border: 1px solid black; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow: hidden;
+  
   
     
   }
@@ -551,8 +560,11 @@ span>span>a{
   .players{
       width: 100%;
       margin: auto;
+      /* border: solid red;
+      background-color: green; */
       margin-top: 30px;
-      background-color: white; border-radius: 10px;
+      background-color: red;
+       border-radius: 10px;
       overflow: hidden;
   }
   .ranji>h3{
@@ -565,17 +577,28 @@ span>span>a{
     
     font-style: BentonSans-Bold, Arial, "Noto Sans", sans-serif;
   }
+  .players{
+    background-color: white;
+  }
   .players>h2{
       margin: 9px 0 9px 15px;
       color: rgb(63, 62, 62);
   }
-  .players>img{
-      width: 95%;
-      display: block;
-      margin: auto;
-      margin-top: 20px;
+  .players-image-box{
+    width: 94%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 300px; */
+  }
+  .players-image-box>img{
+      width: 100%;
+      /* display: block;
+      margin: auto; */
+      /* margin-top: 20px; */
       border-radius: 10px;
-      overflow: hidden;
+      
   }
   .feed-image{
       /* border: 1px solid black; */
@@ -599,8 +622,10 @@ span>span>a{
       width: 100%;
       border-radius: 5px;
   }
-  .flex-50-second-box{
+  .flex-50{
     background-color: white;
+  }
+  .flex-50-second-box{
     border-radius: 10px;
   }
    /* playing mathes section */
@@ -665,13 +690,13 @@ span>span>a{
     width: 24%;
     /* border: 1px solid black; */
     height: fit-content;
+    /* background-color: red; */
     /* border: 1px solid black; */
   }
   .flex-75-box {
       margin-top: 16px;
-  
+  background-color: white;
     border-radius: 17px;
-    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   .flex-75-child-box {

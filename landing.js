@@ -173,9 +173,16 @@ document.querySelector("#chandamama").addEventListener("click", insideDark);
 let count = 0;
 let ary = document.querySelectorAll(".dropbtn");
 let ary2 = document.querySelectorAll("#whitediv>div");
-let footerArray=document.querySelectorAll('body a')
-let childftr=document.querySelectorAll('.childfooter')
+let footerArray = document.querySelectorAll("body a");
+let childftr = document.querySelectorAll(".childfooter");
+let matches = document.querySelectorAll(".Matches");
+let left_boxes = document.querySelectorAll(".content-box");
 console.log(childftr.length);
+let IMG = document.createElement("img");
+IMG.src = "https://wassets.hscicdn.com/static/images/nlp-logo.svg";
+IMG.style.width = "100%";
+document.querySelector(".first-box-1").append(IMG);
+let last = document.querySelectorAll(" .flex-75-child-box");
 
 function insideDark() {
   count++;
@@ -197,29 +204,134 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakhadark.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypaddark.png";
-    document.querySelector('body').style.backgroundColor='#1d1e1f'
+    document.querySelector("body").style.backgroundColor = "#1d1e1f";
     // ------------------footer start-----------------
-    document.querySelector('.parentfooter').style.backgroundColor='#1d1e1f'
-    for(let i=0;i<footerArray.length;i++){
-      footerArray[i].style.backgroundColor='#1d1e1f'
+    document.querySelector(".parentfooter").style.backgroundColor = "#1d1e1f";
+    for (let i = 0; i < footerArray.length; i++) {
+      footerArray[i].style.backgroundColor = "#1d1e1f";
     }
-    footerArray.forEach(function(el){
-      el.style.color='white'
-    })
-    childftr.forEach(function(ele){
-      ele.style.backgroundColor='#1d1e1f'
-    })
-    document.querySelector('#footerlastpart').style.backgroundColor='#1d1e1f'
+    footerArray.forEach(function (el) {
+      el.style.color = "white";
+    });
+    childftr.forEach(function (ele) {
+      ele.style.backgroundColor = "#1d1e1f";
+    });
+    document.querySelector("#footerlastpart").style.backgroundColor = "#1d1e1f";
     // -------------------footer end--------------------
-    document.querySelector('body').style.color='white' //please do not remove this line or this code will not work
+    document.querySelector("body").style.color = "white"; //please do not remove this line or this code will not work
+
+    // ------------changes from praful side-----------------------------
+    document.querySelector(".flex-50").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".highlight-image-box").style.backgroundColor =
+      "#1d1e1f";
+    document.querySelector(".highlight-image-box").style.color = "white";
+    document.querySelector(".dhoni").style.backgroundColor = "#1d1e1f";
+
+    document.querySelector(".highlight-image-box-2").style.backgroundColor =
+      "#1d1e1f";
+    document.querySelector(".highlight-image-box-3").style.backgroundColor =
+      "#1d1e1f";
+    document.querySelector(".players").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".players").style.color = "white";
+    document.querySelector(".players-image-box").style.color = "white";
+
+    document.querySelector(".highlight-image-box-2").style.color = "white";
+    document.querySelector(".explanation").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".explanation").style.color = "white";
+    document.querySelector(".explanation").style.color = "white";
+    IMG.src = "https://wassets.hscicdn.com/static/images/nlp-logo-dark.svg";
+    IMG.style.width = "100%";
+    document.querySelector(".first-box-1").append(IMG);
+    document.querySelector(".first-box-1").append(IMG);
+    document.querySelector(".ask-qustion").style.backgroundColor =
+      "transparent";
+    document.querySelector(".ask-qustion").style.border = "#0cabf4";
+
+    document.querySelector(".first-box").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".flex-75").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".flex-75").style.color = "white";
+    document.querySelector(".flex-75-box").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".flex-75-box").style.color = "white";
+    document.querySelector(".flex-50-second-box").style.backgroundColor =
+      "#1d1e1f";
+
+    document.querySelector(".first-box").style.color = "white";
+    document.querySelector(".flex-25").style.backgroundColor = "#1d1e1f";
+
+    document.querySelector(".dhoni").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".feed-image").style.backgroundColor = "#1d1e1f";
+    document.querySelector(".feed-image").style.color = "white";
+    document.querySelector(".feed-image").style.backgroundColor = "#1d1e1f";
+
+    matches.forEach(function (el) {
+      el.style.backgroundColor = "#1d1e1f";
+      el.style.color = "white";
+    });
+    left_boxes.forEach(function (el) {
+      el.style.backgroundColor = "#1d1e1f";
+      el.style.color = "white";
+    });
+    last.forEach(function (el) {
+      el.style.backgroundColor = "#1d1e1f";
+      el.style.color = "white";
+    });
+
+    // ------------changes from praful side-----------------------------
+
     // console.log('im in dark mode')
-  } 
-  
-  
-  
-  
-  else {
-    document.querySelector('body').style.color='black'
+  } else {
+    // ------------changes from praful side-----------------------------
+    document.querySelector(".flex-50").style.backgroundColor = "white";
+    document.querySelector(".flex-50").style.color = "black";
+    document.querySelector(".highlight-image-box").style.backgroundColor =
+      "white";
+    document.querySelector(".highlight-image-box").style.color = "black";
+    document.querySelector(".highlight-image-box-2").style.backgroundColor =
+      "white";
+    document.querySelector(".highlight-image-box-3").style.backgroundColor =
+      "white";
+    document.querySelector(".feed-image").style.backgroundColor = "white";
+    document.querySelector(".feed-image").style.color = "black";
+    document.querySelector(".explanation").style.backgroundColor = "white";
+    document.querySelector(".players").style.backgroundColor = "white";
+    document.querySelector(".players").style.color = "black";
+    document.querySelector(".players-image-box").style.color = "black";
+    document.querySelector(".flex-50-second-box").style.backgroundColor =
+      "white";
+
+    document.querySelector(".explanation").style.color = "black";
+    document.querySelector(".dhoni").style.backgroundColor = "white";
+    document.querySelector(".explanation").style.color = "black";
+    IMG.src = "https://wassets.hscicdn.com/static/images/nlp-logo.svg";
+    IMG.style.width = "100%";
+    document.querySelector(".first-box-1").append(IMG);
+
+    document.querySelector(".flex-75").style.backgroundColor = "white";
+    document.querySelector(".flex-75").style.color = "black";
+    document.querySelector(".flex-75-box").style.backgroundColor = "white";
+    document.querySelector(".flex-75-box").style.color = "black";
+    document.querySelector(".first-box").style.backgroundColor = "white";
+    document.querySelector(".first-box").style.color = "black";
+    left_boxes.forEach(function (el) {
+      el.style.backgroundColor = "white";
+      el.style.color = "black";
+    });
+    document.querySelector(".flex-25").style.backgroundColor = "white";
+    matches.forEach(function (el) {
+      el.style.backgroundColor = "white";
+      el.style.color = "black";
+    });
+    last.forEach(function (el) {
+      el.style.backgroundColor = "white";
+      el.style.color = "black";
+    });
+    document.querySelector(".flex-75").style.backgroundColor = "white";
+    document.querySelector(".flex-75").style.color = "white";
+    //
+
+    // ------------changes from praful side-----------------------------
+
+    document.querySelector("body").style.color = "black";
     document.querySelector("#container11").style.backgroundColor = "#0398dc";
     for (let i = 0; i < ary2.length; i++) {
       ary2[i].style.backgroundColor = "white";
@@ -237,20 +349,20 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakha.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypad.png";
-    document.querySelector('body').style.backgroundColor='white'
-     // ------------------footer start-----------------
-     document.querySelector('.parentfooter').style.backgroundColor='white'
-     for(let i=0;i<footerArray.length;i++){
-       footerArray[i].style.backgroundColor='white'
-     }
-     footerArray.forEach(function(el){
-       el.style.color='black'
-     })
-     childftr.forEach(function(ele){
-       ele.style.backgroundColor='white'
-     })
-     document.querySelector('#footerlastpart').style.backgroundColor='white'
-     // -------------------footer end--------------------
+    document.querySelector("body").style.backgroundColor = "white";
+    // ------------------footer start-----------------
+    document.querySelector(".parentfooter").style.backgroundColor = "white";
+    for (let i = 0; i < footerArray.length; i++) {
+      footerArray[i].style.backgroundColor = "white";
+    }
+    footerArray.forEach(function (el) {
+      el.style.color = "black";
+    });
+    childftr.forEach(function (ele) {
+      ele.style.backgroundColor = "white";
+    });
+    document.querySelector("#footerlastpart").style.backgroundColor = "white";
+    // -------------------footer end--------------------
     // console.log('im in normal work')
     count = 0;
   }

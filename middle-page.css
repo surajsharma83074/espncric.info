@@ -233,11 +233,16 @@
       margin: 9px 0 9px 15px;
       color: rgb(63, 62, 62);
   }
+  .players-image-box{
+    border: 1px solid red;
+    width: 95%;
+    height: fit-content;
+  }
   .players>img{
-      width: 95%;
-      display: block;
+      width: 100%;
+      /* display: block;
       margin: auto;
-      margin-top: 20px;
+      margin-top: 20px; */
       border-radius: 10px;
       overflow: hidden;
   }
