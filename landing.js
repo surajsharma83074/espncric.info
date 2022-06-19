@@ -137,6 +137,11 @@ function addtoWhite(divdata) {
   });
 }
 
+document.querySelector("#logout").addEventListener("click",function(event){
+  event.preventDefault();
+  window.location.href='./Signup page.html'
+})
+
 document.querySelector("#reg").addEventListener("click", clicking);
 function clicking() {
   let filterData = divdata.filter(function (ele) {
@@ -174,17 +179,17 @@ document.querySelector("#chandamama").addEventListener("click", insideDark);
 let count = 0;
 let ary = document.querySelectorAll(".dropbtn");
 let ary2 = document.querySelectorAll("#whitediv>div");
-<<<<<<< HEAD
-let footerArray = document.querySelectorAll("body a");
-let childftr = document.querySelectorAll(".childfooter");
+// <<<<<<< HEAD
+// let footerArray = document.querySelectorAll("body a");
+// let childftr = document.querySelectorAll(".childfooter");
 let matches = document.querySelectorAll(".Matches");
 let left_boxes = document.querySelectorAll(".content-box");
-=======
+
 let footerArray=document.querySelectorAll('body a')
 let childftr=document.querySelectorAll('.childfooter')
 let heading=document.querySelectorAll(".childfooter>div>h1")
 let end=document.querySelectorAll(".theend>span>a")
->>>>>>> 31e2deae994d1c667fe033aab3bcf9c24c7b24bb
+
 console.log(childftr.length);
 let IMG = document.createElement("img");
 IMG.src = "https://wassets.hscicdn.com/static/images/nlp-logo.svg";
@@ -212,7 +217,6 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakhadark.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypaddark.png";
-<<<<<<< HEAD
     document.querySelector("body").style.backgroundColor = "#1d1e1f";
     // ------------------footer start-----------------
     document.querySelector(".parentfooter").style.backgroundColor = "#1d1e1f";
@@ -226,7 +230,7 @@ function insideDark() {
       ele.style.backgroundColor = "#1d1e1f";
     });
     document.querySelector("#footerlastpart").style.backgroundColor = "#1d1e1f";
-=======
+
     document.querySelector('body').style.backgroundColor='black'
     // ------------------footer start-----------------
     document.querySelector('.parentfooter').style.backgroundColor='#1d1e1f'
@@ -245,7 +249,7 @@ function insideDark() {
     })
     document.querySelector('#footerlastpart').style.backgroundColor='#1d1e1f'
     // document.querySelector(".childfooter>div h1").style.color="white"
->>>>>>> 31e2deae994d1c667fe033aab3bcf9c24c7b24bb
+
     // -------------------footer end--------------------
     document.querySelector("body").style.color = "white"; //please do not remove this line or this code will not work
 
@@ -378,7 +382,7 @@ function insideDark() {
     kakha.src = "https://www.linkpicture.com/q/kakha.png";
     let keypad = document.querySelector("#keypad>img");
     keypad.src = "https://www.linkpicture.com/q/keypad.png";
-<<<<<<< HEAD
+
     document.querySelector("body").style.backgroundColor = "white";
     // ------------------footer start-----------------
     document.querySelector(".parentfooter").style.backgroundColor = "white";
@@ -393,7 +397,7 @@ function insideDark() {
     });
     document.querySelector("#footerlastpart").style.backgroundColor = "white";
     // -------------------footer end--------------------
-=======
+
     document.querySelector('body').style.backgroundColor='#f9f9fb'
      // ------------------footer start-----------------
      document.querySelector('.parentfooter').style.backgroundColor='white'
@@ -415,7 +419,7 @@ function insideDark() {
      document.querySelector('#footerlastpart').style.backgroundColor='#edeef0'
 
      // -------------------footer end--------------------
->>>>>>> 31e2deae994d1c667fe033aab3bcf9c24c7b24bb
+
     // console.log('im in normal work')
     count = 0;
   }

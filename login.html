@@ -34,7 +34,8 @@
     let storeSignup=JSON.parse(localStorage.getItem('signData'))
     document.querySelector('form').addEventListener('submit',logging)
 
-    function logging(){
+    function logging(event){
+        event.preventDefault();
         let obj={
             em:document.querySelector('#email').value,
             pw:document.querySelector('#passw').value
